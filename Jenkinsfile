@@ -5,7 +5,7 @@ pipeline {
     stages{
         stage('clone') {
             steps {
-                sh 'docker build -t project_template'  
+                sh 'docker build -t project_template .'  
             }
         }
     }
